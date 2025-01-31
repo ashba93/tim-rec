@@ -41,8 +41,8 @@ Results and evaluation metrics such as **Precision@K, NDCG@K, and Recall@K** are
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ashba93/telco-rec.git
-   cd telco-rec
+   git clone https://github.com/ashba93/tim-rec.git
+   cd tim-rec
    ```
 2. Install dependencies:
    ```bash
