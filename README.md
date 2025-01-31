@@ -13,17 +13,17 @@ This repository provides the dataset and benchmark results for our paper, which 
 ## Dataset Statistics
 | Characteristic | Value |
 |--------------|------|
-| Total interactions | X |
-| Time range | X |
-| Acceptance sparsity (%) | X |
-| Avg. recommendations per session | X |
+| Total interactions | 1494061 |
+| Time range | ∼6 months |
+| Acceptance sparsity (%) | ∼5% |
+| Avg. recommendations per session | ∼2.4 |
 
 _For more details on the dataset schema and preprocessing, refer to the documentation._
 
 ## Benchmark Models
 We evaluate several Learning-to-Rank and recommendation models, including:
-- **Traditional Models**: Logistic Regression, Gradient Boosting Trees
-- **Neural Models**: DeepFM, Wide & Deep, Transformer-based ranking models
+- **Traditional Models**: Matrix Factorization Algorithm
+- **Neural Models**: Neural Network based approaches
 - **Graph-Based Models**: GNN-based recommendation approaches
 
 Results and evaluation metrics such as **Precision@K, NDCG@K, and Recall@K** are included in the paper.
