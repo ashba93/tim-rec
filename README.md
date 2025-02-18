@@ -3,8 +3,6 @@
 
  **[SIGIR 2025] TIM Rec: Sparse Feedback on Multi-Item Upselling Recommendations in an Industrial Dataset of Telco Calls**
  
- **Drive**: https://drive.google.com/file/d/1UeGjMF_W20XvFnRdZrIECeKb8qJrdxfd/view?usp=drive_link
- 
  **HugginFace**: https://huggingface.co/datasets/shba93/tim-rec
 
 ## Overview
@@ -63,18 +61,6 @@ Results and evaluation metrics such as **Precision@K, NDCG@K, and Recall@K** are
    ```bash
    python src/train.py --model LTR_Model
    ```
-
-## Citation
-If you use this dataset or benchmark results in your research, please cite our paper:
-```bibtex
-@article{YourPaper,
-  author    = {Alessandro Sbandi, Federico Siciliano, and Fabrizio Silvestri},
-  title     = {TIM Rec: Sparse Feedback on Multi-Item Upselling Recommendations in an Industrial Dataset of Telco Calls},
-  journal   = {48th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR ’25), July 13-18, 2025, Padua, Italy},
-  year      = {2025},
-  url       = {DOI or Link}
-}
-```
 
 ## Contact
 For questions or collaborations, please open an issue or contact us at **alessandro.sbandi@gmail.com**.
