@@ -33,34 +33,5 @@ We evaluate several Learning-to-Rank and recommendation models, including:
 
 Results and evaluation metrics such as **Precision@K, NDCG@K, and Recall@K** are included in the paper.
 
-## Repository Structure
-```
-├── data/                  # Dataset files (to be released)
-├── benchmarks/            # Code for baseline models
-├── results/               # Evaluation results and metrics
-├── src/                   # Scripts for preprocessing and training
-├── docs/                  # Additional documentation
-└── README.md              # This file
-```
-
-## Getting Started
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ashba93/tim-rec.git
-   cd tim-rec
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run preprocessing scripts:
-   ```bash
-   python src/preprocess.py
-   ```
-4. Train benchmark models:
-   ```bash
-   python src/train.py --model LTR_Model
-   ```
-
 ## Contact
 For questions or collaborations, please open an issue or contact us at **alessandro.sbandi@gmail.com**.
