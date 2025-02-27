@@ -2,6 +2,8 @@
 
 
  **[SIGIR 2025] TIM Rec: Sparse Feedback on Multi-Item Upselling Recommendations in an Industrial Dataset of Telco Calls**
+
+ ** Authors: Alessandro Sbandi, Federico Siciliano, Fabrizio Silvestri**
  
  **HugginFace**: https://huggingface.co/datasets/shba93/tim-rec
 
