@@ -1,0 +1,8 @@
++data_params: data_cfg
+
++model: model
+#model: svd
+
+#EXPERIMENT PARAMETERS - NOT SAVED AS PART OF THE CONFIGURATION
+__exp__:
+    name: reb2 #8-feb

@@ -1,0 +1,5 @@
+name: SASRec
+num_blocks: 1
+emb_size: 64
+num_heads: 1
+dropout_rate: 0.2
