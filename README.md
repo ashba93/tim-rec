@@ -35,5 +35,36 @@ We evaluate several Learning-to-Rank and recommendation models, including:
 
 Results and evaluation metrics such as **Precision@K, NDCG@K, and Recall@K** are included in the paper.
 
+
+## How to Run
+
+### 0. Setup the environment
+
+Create a virtual environment and install the required dependencies:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # or `venv\Scripts\activate` on Windows
+pip install -r requirements.txt
+````
+
+### 1. Run SVD baseline
+
+To run the SVD baseline:
+
+* Open and execute `svd.ipynb`.
+* The dataset will be automatically downloaded during execution.
+
+### 2. Run other baselines
+
+To run the other baseline models:
+
+* Open and execute `ntb/main.ipynb`.
+* Model configurations can be adjusted in the `cfg/` directory.
+
+  * In particular, to change the model being used, edit the `cfg/model/model.yaml` file and modify the `name` field.
+
+
+
 ## Contact
 For questions or collaborations, please open an issue or contact us at **alessandro.sbandi@gmail.com**.
