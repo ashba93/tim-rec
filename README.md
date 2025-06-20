@@ -62,7 +62,7 @@ To run the other baseline models:
 * Open and execute `ntb/main.ipynb`.
 * Model configurations can be adjusted in the `cfg/` directory.
 
-  * In particular, to change the model being used, edit the `cfg/model/model.yaml` file and modify the `name` field.
+  * In particular, to change the model being used, edit the `cfg/model/model.yaml` file and modify the `rec_model` field.
 
 
 
