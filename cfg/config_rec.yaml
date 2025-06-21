@@ -5,4 +5,4 @@
 
 #EXPERIMENT PARAMETERS - NOT SAVED AS PART OF THE CONFIGURATION
 __exp__:
-    name: reb2 #8-feb
+    name: exp_name #8-feb

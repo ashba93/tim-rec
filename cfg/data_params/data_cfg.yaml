@@ -36,7 +36,7 @@ collator_params:
     val: 100
     test: 1.
   #possible_negatives: all #for testing
-  negatives_relevance: 0.5
+  negatives_relevance: 0
   relevance: out_rating
 
 split_method: leave_n_out #the split method of the dataset, including 'leave_n_out', 'hold_out', 'k_fold'

@@ -38,4 +38,4 @@ log_params:
 
 +trainer_params: trainer_params_cfg
 
-+rec_model: SASRec #Caser #LightGCN #NCF #GRU4Rec #SASRec
++rec_model: SASRec #Caser #GRU4Rec #LightGCN #NCF #SASRec
