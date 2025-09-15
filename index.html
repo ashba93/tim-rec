@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TIM-Rec: Explicit Sparse Feedback on Multi-Item Upselling Recommendations in an Industrial Dataset of Telco Calls</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-md p-6 text-center">
+    <h1 class="text-4xl font-bold text-blue-600">TIM-Rec: Explicit Sparse Feedback on Multi-Item Upselling Recommendations in an Industrial Dataset of Telco Calls</h1>
+    <p class="mt-2 text-lg text-gray-600">A telco dataset for upselling recommendations</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-12">
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">About the Dataset</h2>
+      <p>
+        Our dataset was collected from real-world telecommunications interactions.
+        This dataset has been designed to capture the complexity of recommendation
+        scenarios where multiple items are presented simultaneously and user feedback is sparse.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Dataset Overview</h2>
+        <p class="mb-8">
+          Key statistics of the dataset including the number of users, items, and interactions
+          along with the type of feedback collected.
+        </p>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-200 text-left text-sm">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 border">Users</th>
+              <th class="px-4 py-2 border">Items</th>
+              <th class="px-4 py-2 border">Interactions</th>
+              <th class="px-4 py-2 border">Feedback</th>
+              <th class="px-4 py-2 border">Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border">370k</td>
+              <td class="px-4 py-2 border">388</td>
+              <td class="px-4 py-2 border">1.5M</td>
+              <td class="px-4 py-2 border">Explicit (Sparse)</td>
+              <td class="px-4 py-2 border">Aug 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Dataset Comparison</h2>
+        <p class="mb-8">
+          Compare this dataset with other well-known recommendation datasets in terms of size,
+          type, sparsity, and availability.
+        </p>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-200 bg-white text-sm">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 border-b text-left">Dataset</th>
+              <th class="px-4 py-2 border-b">Interactions</th>
+              <th class="px-4 py-2 border-b">Time Range</th>
+              <th class="px-4 py-2 border-b">Dataset Type</th>
+              <th class="px-4 py-2 border-b">Acceptance Sparsity (%)</th>
+              <th class="px-4 py-2 border-b"># Rec.</th>
+              <th class="px-4 py-2 border-b">Public</th>
+              <th class="px-4 py-2 border-b">Dynamic</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Amazon</td>
+              <td class="px-4 py-2 border-b">~571M</td>
+              <td class="px-4 py-2 border-b">27 years</td>
+              <td class="px-4 py-2 border-b">Cross-selling, Upselling</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">~1.0</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Movielens100K</td>
+              <td class="px-4 py-2 border-b">0.1M</td>
+              <td class="px-4 py-2 border-b">7 months</td>
+              <td class="px-4 py-2 border-b">Recommendation</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">~2.0</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Movielens25M</td>
+              <td class="px-4 py-2 border-b">25M</td>
+              <td class="px-4 py-2 border-b">24 years</td>
+              <td class="px-4 py-2 border-b">Recommendation</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">~1.2</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">LETOR</td>
+              <td class="px-4 py-2 border-b"><1M</td>
+              <td class="px-4 py-2 border-b">Not specified</td>
+              <td class="px-4 py-2 border-b">Learning-to-Rank (LTR)</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">NA</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Taobao</td>
+              <td class="px-4 py-2 border-b">~100M</td>
+              <td class="px-4 py-2 border-b">9 days</td>
+              <td class="px-4 py-2 border-b">Upselling</td>
+              <td class="px-4 py-2 border-b">~2% (implicit)</td>
+              <td class="px-4 py-2 border-b">~1.0</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Yelp</td>
+              <td class="px-4 py-2 border-b">~7M</td>
+              <td class="px-4 py-2 border-b">8 years</td>
+              <td class="px-4 py-2 border-b">Cross-selling, Retention</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">1</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Netflix Prize</td>
+              <td class="px-4 py-2 border-b">~100M</td>
+              <td class="px-4 py-2 border-b">7 years</td>
+              <td class="px-4 py-2 border-b">Recommendation</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">~5.8</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">MIND</td>
+              <td class="px-4 py-2 border-b">~17.7M</td>
+              <td class="px-4 py-2 border-b">6 weeks</td>
+              <td class="px-4 py-2 border-b">Recommendation</td>
+              <td class="px-4 py-2 border-b">~11% (implicit)</td>
+              <td class="px-4 py-2 border-b">~37</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Iranian Churn</td>
+              <td class="px-4 py-2 border-b">~3k</td>
+              <td class="px-4 py-2 border-b">1 year</td>
+              <td class="px-4 py-2 border-b">Customer Churn</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">1</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Dookeram et al.</td>
+              <td class="px-4 py-2 border-b">~3k</td>
+              <td class="px-4 py-2 border-b">1 year</td>
+              <td class="px-4 py-2 border-b">Upselling</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">?</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Alves et al.</td>
+              <td class="px-4 py-2 border-b">~8M</td>
+              <td class="px-4 py-2 border-b">?</td>
+              <td class="px-4 py-2 border-b">Recommendation</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">?</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-2 border-b">Pham et al.</td>
+              <td class="px-4 py-2 border-b">~80k</td>
+              <td class="px-4 py-2 border-b">6 months</td>
+              <td class="px-4 py-2 border-b">Recommendation</td>
+              <td class="px-4 py-2 border-b">Not Applicable</td>
+              <td class="px-4 py-2 border-b">?</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10007;</td>
+              <td class="px-4 py-2 border-b text-red-600 font-bold">&#10003;</td>
+            </tr>
+            <tr class="hover:bg-gray-50 font-bold bg-gray-50">
+              <td class="px-4 py-2 border-b">Ours</td>
+              <td class="px-4 py-2 border-b">~1.5M</td>
+              <td class="px-4 py-2 border-b">6 months</td>
+              <td class="px-4 py-2 border-b">Upselling</td>
+              <td class="px-4 py-2 border-b">~5% (explicit)</td>
+              <td class="px-4 py-2 border-b">~2.4</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+              <td class="px-4 py-2 border-b text-green-600 font-bold">&#10003;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Dataset Schema</h2>
+      <p class="mb-8">The dataset is provided as CSV files with the following columns:</p>
+      <ul class="list-disc ml-6 mb-4">
+        <li><code>user_id</code>: Anonymized user identifier</li>
+        <li><code>contact_date</code>: Interaction day</li>
+        <li><code>category</code>: Item Category</li>
+        <li><code>contact_outcome</code>: Explicit user feedback (Accepted, Refused)</li>
+        <li><code>PCAFeat_0</code>: PCA Features (0 to 63)</li>
+        <li><code>item_id</code>: Anonymized item offered</li>
+
+      </ul>
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+    user_id,contact_date,category,contact_outcome,PCAFeat_0,...,PCAFeat63,item_id
+    12345,2025-01-23,Entertainment,Refused,-0.361584,...0.056747,1
+      </pre>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Resources</h2>
+        <p class="mb-8">
+          Useful links to access the dataset, the research paper, and related code repositories.
+        </p>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>
+          📄 <a href="LINK_TO_PAPER" target="_blank" class="text-blue-600 hover:underline">Research Paper</a>
+        </li>
+        <li>
+          📂 <a href="https://huggingface.co/datasets/shba93/tim-rec/resolve/main/tim-rec.zip?download=true" target="_blank" class="text-blue-600 hover:underline">Download Dataset</a>
+        </li>
+        <li>
+          🧾 <a href="https://github.com/ashba93/tim-rec" target="_blank" class="text-blue-600 hover:underline">GitHub Repository</a>
+        </li>        
+        <li>
+          🔗 <a href="https://huggingface.co/datasets/shba93/tim-rec" target="_blank" class="text-blue-600 hover:underline">HuggingFace Dataset Card</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-4">Citation</h2>
+      <p>If you use this dataset in your research, please cite:</p>
+      <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+@inproceedings{sbandi2025tim,
+  title={TIM-Rec: Explicit Sparse Feedback on Multi-Item Upselling Recommendations in an Industrial Dataset of Telco Calls},
+  author={Sbandi, Alessandro and Siciliano, Federico and Silvestri, Fabrizio},
+  booktitle={Proceedings of the Nineteenth ACM Conference on Recommender Systems},
+  pages={865--873},
+  year={2025}
+}
+      </pre>
+    </section>
+
+
+  <section>
+    <h2 class="text-2xl font-bold mb-4">License</h2>
+    <p>
+      This dataset is released under the <strong>CC BY-NC 4.0</strong> license.  
+      It is intended for academic research only. Commercial use is prohibited without prior consent.
+    </p>
+  </section>
+    
+  </main>
+
+  <section id="contact" class="py-20 px-6 text-center">
+    <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <p>For questions or issues, please open a discussion on the 
+      <a href="https://github.com/ashba93/tim-rec/issues" class="text-blue-600">GitHub repository</a> 
+      or email <a href="mailto:alessandro.sbandi@gmail.com" class="text-blue-600">alessandro.sbandi@gmail.com</a>.
+    </p>
+  </section>
+
+
+
+
+  <footer class="bg-gray-900 text-white text-center p-6 mt-12">
+    © 2025 Alessandro Sbandi — Dataset for research use only
+  </footer>
+
+</body>
+</html>
