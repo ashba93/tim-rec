@@ -7,6 +7,20 @@
  
  **HugginFace**: https://huggingface.co/datasets/shba93/tim-rec
 
+## Citation
+
+If you use this code or find it helpful for your research, please cite:
+
+````
+@inproceedings{sbandi2025tim,
+  title={TIM-Rec: Explicit Sparse Feedback on Multi-Item Upselling Recommendations in an Industrial Dataset of Telco Calls},
+  author={Sbandi, Alessandro and Siciliano, Federico and Silvestri, Fabrizio},
+  booktitle={Proceedings of the Nineteenth ACM Conference on Recommender Systems},
+  pages={865--873},
+  year={2025}
+}
+````
+
 ## Overview
 This repository provides the dataset and benchmark results for our paper, which introduces a real-world **telecommunications upselling dataset** with **multi-item recommendations and sparse feedback**. The dataset captures customer interactions from a real customer care service, where multiple items can be recommended in a single session, and only a small fraction of offers are accepted. Our goal is to provide a resource for evaluating **Learning-to-Rank (LTR)** models and recommendation systems in real-world settings.
 
